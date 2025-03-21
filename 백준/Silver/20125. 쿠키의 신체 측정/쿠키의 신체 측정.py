@@ -1,6 +1,4 @@
 import sys
-from wsgiref.validate import header_re
-
 input = sys.stdin.readline
 N = int(input())
 ls = [list(input().strip()) for _ in range(N)]
@@ -25,5 +23,3 @@ for x, y in cookie:
     elif x > heart[0] and y == heart[1]+1:
         ans[4] += 1
 print(" ".join(map(str, ans)))
-
-
